@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/regest_linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+        <!--layout_gravity="left|center_vertical"靠左垂直居中-->
+        <ImageView
+            android:id="@+id/regest_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/regest_back"
+            />
+
+        <TextView
+            android:id="@+id/tv_get_yzm"
+            android:layout_width="312dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="8dp"
+            android:layout_marginLeft="140dp"
+            android:text="@string/action_regest_topic"
+            android:textSize="26sp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0dp"
+        android:background="@color/view_line_bg" />
+
+    <LinearLayout
+        android:id="@+id/regest_linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/regest_linear1"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <EditText
+            android:id="@+id/regest_ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/action_regest_ID"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dp"
+            android:background="@color/view_line_bg" />
+        <EditText
+            android:id="@+id/regest_nanme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/action_regest_name"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dp"
+            android:background="@color/view_line_bg" />
+        <EditText
+            android:id="@+id/regest_mash"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="部队番号："
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dp"
+            android:background="@color/view_line_bg" />
+        <EditText
+            android:id="@+id/regest_key1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:hint="@string/action_regest_key1"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dp"
+            android:background="@color/view_line_bg" />
+        <EditText
+            android:id="@+id/regest_key2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:hint="@string/action_regest_key2"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            />
+        <View
+            android:id="@+id/action_regest_view"
+            android:layout_width="match_parent"
+            android:layout_height="1.0dp"
+            android:background="@color/view_line_bg" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/email_sign_in_button"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/action_regest_finish"
+        android:textStyle="bold"
+        android:layout_below="@+id/regest_linear2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="74dp" />
+
+
+</RelativeLayout>

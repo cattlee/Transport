@@ -1,0 +1,109 @@
+<resources>
+
+    <string name="app_name">物资补给 </string>
+    <string name="splash_version_info">坚决完成任务</string>
+    <string name="index_search_edit_hint">搜索物资种类</string>
+
+    <!-- 菜单 -->
+    <string name="menu_setting">设置</string>
+    <string name="menu_history">浏览历史</string>
+    <string name="menu_feedback">意见反馈</string>
+    <string name="menu_help">帮助</string>
+    <string name="menu_about">关于</string>
+    <string name="menu_exit">退出</string>
+    <!-- 菜单 -->
+
+
+    <!-- 首页PopupWnidow -->
+    <string name="barcode_buy">条码购</string>
+    <string name="camera_buy">拍照购</string>
+    <string name="color_buy">颜色购</string>
+    <!-- 首页PopupWnidow -->
+
+
+    <!-- 首页 -->
+    <string name="index_limit">还剩</string>
+    <string name="index_hour">时</string>
+    <string name="index_min">分</string>
+    <string name="index_seconds">秒</string>
+    <string name="index_price">秒杀价:</string>
+    <string name="index_raw_price">原价:</string>
+    <string name="index_slogan">疯狂秒杀</string>
+    <string name="index_promotion">促销卖场</string>
+    <string name="index_recharge">充值</string>
+    <string name="index_group_buy">团购</string>
+    <string name="index_lottery">彩票</string>
+    <string name="index_order">订单状态</string>
+    <string name="index_history">浏览历史</string>
+    <string name="index_collect">我的关注</string>
+    <string name="index_life_journey">生活娱乐</string>
+    <string name="index_notify_info">向左滑，更多优惠等你抢</string>
+    <string name="index_shopping_jinqiufengbao">金秋风暴</string>
+    <string name="index_shopping_remenyouhui">热门特惠</string>
+    <!-- 首页 -->
+
+
+    <!-- 个人中心 -->
+    <string name="personal_title">个人中心</string>
+    <string name="personal_more">更多</string>
+    <string name="personal_welcome">为人民服务!</string>
+    <string name="personal_login">登录</string>
+    <string name="personal_fast_search">运单状态速查</string>
+    <string name="personal_all_order">全部运单</string>
+    <string name="personal_my_focus">我的荣誉</string>
+    <string name="personal_information">消息中心</string>
+    <string name="personal_personal_seting">设置中心</string>
+    <string name="personal_return_back">系统设置</string>
+    <string name="personal_account">账户安全</string>
+    <string name="personal_order_center">运单中心</string>
+    <string name="personal_account_center">信息中心</string>
+    <string name="personal_customer_service">客户服务</string>
+    <!-- 个人中心 -->
+
+    <!-- 登录 -->
+    <string name="prompt_email">ID（账号）</string>
+    <string name="prompt_password">登录密码</string>
+    <string name="action_sign_in">登录</string>
+    <string name="action_sign_slogan">使命必达</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">账号不可用</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing emailcompletions."</string>
+    <!-- 登录 -->
+
+
+    <!--注册-->
+    <string name="action_regest_topic">注册</string>
+    <string name="action_regest_ID">ID(账号)：</string>
+    <string name="action_regest_name">姓名：</string>
+    <string name="action_regest_mash">番号：</string>
+    <string name="action_regest_key1">密码:</string>
+    <string name="action_regest_key2">确认密码:</string>
+    <string name="action_regest_finish">完成</string>
+    <!--注册-->
+
+
+    <!-- JazzyViewPager -->
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+    <string name="title_activity_login">登录</string>
+
+
+
+    <!-- JazzyViewPager -->
+
+</resources>
