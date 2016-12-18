@@ -101,7 +101,7 @@
         <item>Accordion</item>
     </string-array>
     <string name="title_activity_login">登录</string>
-
+    <string name="title_activity_send_order">SendOrderActivity</string>
 
 
     <!-- JazzyViewPager -->

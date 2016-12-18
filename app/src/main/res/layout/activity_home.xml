@@ -33,29 +33,29 @@
             android:orientation="horizontal" >
 
             <RadioButton
-                android:id="@+id/home_tab_main"
+                android:id="@+id/home_tab_news"
                 style="@style/home_tab_bottom"
                 android:background="@drawable/home_tab_background_selector"
                 android:checked="true"
                 android:drawableTop="@drawable/home_tab_main_selector" />
 
             <RadioButton
-                android:id="@+id/home_tab_search"
+                android:id="@+id/home_tab_navigate"
                 style="@style/home_tab_bottom"
                 android:background="@drawable/home_tab_background_selector"
                 android:drawableTop="@drawable/home_tab_search_selector" />
 
             <RadioButton
-                android:id="@+id/home_tab_category"
+                android:id="@+id/home_tab_chat"
                 style="@style/home_tab_bottom"
                 android:background="@drawable/home_tab_background_selector"
                 android:drawableTop="@drawable/home_tab_category_selector" />
 
             <RadioButton
-                android:id="@+id/home_tab_cart"
+                android:id="@+id/home_tab_contactor"
                 style="@style/home_tab_bottom"
                 android:background="@drawable/home_tab_background_selector"
-                android:drawableTop="@drawable/home_tab_cart_selector" />
+                android:drawableTop="@drawable/home_tab_chat_selector" />
 
             <RadioButton
                 android:id="@+id/home_tab_personal"

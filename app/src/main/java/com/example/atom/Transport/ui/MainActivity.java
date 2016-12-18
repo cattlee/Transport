@@ -25,7 +25,7 @@ import com.example.atom.Transport.widgets.viewpager.CirclePageIndicator;
  *
  * @version V_1.0.0
  *
- * @description 
+ * @description   主activity
  *
  */
 public class MainActivity extends BaseActivity {

@@ -36,13 +36,13 @@
     <android:uses-permission android:name="android.permission.READ_CALL_LOG" />
 
     <application
-        android:name="com.example.atom.Transport.BaseApplication"
+        android:name=".BaseApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme">
+        android:theme="@style/notitle">
         <activity
-            android:name="com.example.atom.Transport.activity.SplashActivity"
+            android:name=".activity.SplashActivity"
             android:label="@string/app_name"
             android:launchMode="singleTask"
             android:theme="@style/SplashTheme">
@@ -53,41 +53,44 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.atom.Transport.ui.HomeActivity"
+            android:name=".ui.HomeActivity"
             android:launchMode="singleTop"
             android:theme="@style/AppTheme" />
         <activity
-            android:name="com.example.atom.Transport.ui.MainActivity"
+            android:name=".ui.MainActivity"
             android:launchMode="singleTop"
             android:theme="@style/AppTheme" />
         <activity
-            android:name="com.example.atom.Transport.ui.IndexActivity"
+            android:name=".ui.NewsActivity"
             android:launchMode="singleTop"
             android:theme="@style/AppTheme" />
         <activity
-            android:name="com.example.atom.Transport.ui.CategoryActivity"
+            android:name=".ui.ChatActivity"
             android:launchMode="singleTop"
             android:theme="@style/AppTheme" />
         <activity
-            android:name="com.example.atom.Transport.ui.CartActivity"
+            android:name=".ui.ContactorActivity"
             android:launchMode="singleTop"
             android:theme="@style/AppTheme" />
         <activity
-            android:name="com.example.atom.Transport.ui.PersonalActivity"
+            android:name=".ui.PersonalActivity"
             android:launchMode="singleTop"
             android:theme="@style/AppTheme" />
         <activity
-            android:name="com.example.atom.Transport.ui.SearchActivity"
+            android:name=".ui.NavigateActivity"
             android:launchMode="singleTop"
             android:theme="@style/Theme.Present"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name="com.example.atom.Transport.activity.LoginActivity"
+            android:name=".activity.LoginActivity"
             android:label="@string/title_activity_login" />
         <activity
-            android:name="com.example.atom.Transport.activity.RegestActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:label="@string/app_name" />
+            android:name=".activity.RegestActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".ui.base.SendOrderActivity"
+            android:label="@string/title_activity_send_order"></activity>
     </application>
 
 </manifest>

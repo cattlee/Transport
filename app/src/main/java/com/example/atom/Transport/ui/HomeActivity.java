@@ -25,7 +25,7 @@ import com.nostra13.universalimageloader.core.ImageLoader;
  *
  * @version V_1.0.0
  *
- * @description
+ * @description     由homeActivity跳转到各个页面
  *
  */
 public class HomeActivity extends TabActivity {
@@ -59,20 +59,20 @@ public class HomeActivity extends TabActivity {
 
 		mTabHost = getTabHost();
 
-		Intent i_main = new Intent(this, IndexActivity.class);
-		Intent i_search = new Intent(this, SearchActivity.class);
-		Intent i_category = new Intent(this, CategoryActivity.class);
-		Intent i_cart = new Intent(this, CartActivity.class);
-		Intent i_personal = new Intent(this, PersonalActivity.class);
+		Intent i_news = new Intent(this, NewsActivity.class);//跳转到主信息界面
+		Intent i_navigate = new Intent(this, NavigateActivity.class);//导航界面
+		Intent i_chat = new Intent(this, ChatActivity.class);//聊天信息界面
+		Intent i_contact = new Intent(this, ContactorActivity.class);//联系人界面
+		Intent i_personal = new Intent(this, PersonalActivity.class);//个人中心界面
 
 		mTabHost.addTab(mTabHost.newTabSpec(TAB_MAIN).setIndicator(TAB_MAIN)
-				.setContent(i_main));
+				.setContent(i_news));
 		mTabHost.addTab(mTabHost.newTabSpec(TAB_SEARCH)
-				.setIndicator(TAB_SEARCH).setContent(i_search));
+				.setIndicator(TAB_SEARCH).setContent(i_navigate));
 		mTabHost.addTab(mTabHost.newTabSpec(TAB_CATEGORY)
-				.setIndicator(TAB_CATEGORY).setContent(i_category));
+				.setIndicator(TAB_CATEGORY).setContent(i_chat));
 		mTabHost.addTab(mTabHost.newTabSpec(TAB_CART).setIndicator(TAB_CART)
-				.setContent(i_cart));
+				.setContent(i_contact));
 		mTabHost.addTab(mTabHost.newTabSpec(TAB_PERSONAL)
 				.setIndicator(TAB_PERSONAL).setContent(i_personal));
 
@@ -82,19 +82,19 @@ public class HomeActivity extends TabActivity {
 				.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 					public void onCheckedChanged(RadioGroup group, int checkedId) {
 						switch (checkedId) {
-							case R.id.home_tab_main:
+							case R.id.home_tab_news:
 								mTabHost.setCurrentTabByTag(TAB_MAIN);
 								break;
 
-							case R.id.home_tab_search:
+							case R.id.home_tab_navigate:
 								mTabHost.setCurrentTabByTag(TAB_SEARCH);
 								break;
 
-							case R.id.home_tab_category:
+							case R.id.home_tab_chat:
 								mTabHost.setCurrentTabByTag(TAB_CATEGORY);
 								break;
 
-							case R.id.home_tab_cart:
+							case R.id.home_tab_contactor:
 								mTabHost.setCurrentTabByTag(TAB_CART);
 								break;
 
@@ -138,7 +138,7 @@ public class HomeActivity extends TabActivity {
 
 			case R.id.menu_exit:
 
-				showAlertDialog("退出程序", "确定退出高仿京东商城？", "确定", new OnClickListener() {
+				showAlertDialog("退出程序", "退出物流系统？？", "确定", new OnClickListener() {
 
 					@Override
 					public void onClick(DialogInterface dialog, int which) {
