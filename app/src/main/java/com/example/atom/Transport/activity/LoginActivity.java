@@ -13,6 +13,7 @@ import android.widget.ProgressBar;
 import com.example.atom.Transport.R;
 import com.example.atom.Transport.ui.MainActivity;
 import com.example.atom.Transport.utils.CommonTools;
+import com.example.atom.Transport.utils.LoginToServer;
 
 /**
  * Created by ltf on 2016/12/5.
@@ -49,6 +50,7 @@ public class LoginActivity extends Activity {
     }
 
     /**
+     * 测试Git
      * 初始化view
      */
     private void initview() {
@@ -60,7 +62,7 @@ public class LoginActivity extends Activity {
                     @Override
                     public void handleMessage(Message msg) {
                         String response=(String)msg.obj;
-                        if("TRUE".equals(response)){
+                        if("true".equals(response)){
                             //如果登陆成功 ，进入主界面
                         Intent intent=new Intent(LoginActivity.this,MainActivity.class);
                             startActivity(intent);
@@ -77,9 +79,9 @@ public class LoginActivity extends Activity {
                         String result = login.doPost(name.getText().toString(),password.getText().toString());
                         Message msg=new Message();
                         msg.obj=result;
-                        mHandler.sendMessage(msg);
+                        mHandler.sendMessage(msg);//发送消息
                     }
-                });
+                }).start();
 
 
                 //CommonTools.showShortToast(LoginActivity.this,"登录");
